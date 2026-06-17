@@ -15,8 +15,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { SIGN_IN_PATH } from "../utils";
-// import { CaretCircleUpIcon, SignOutIcon } from "@phosphor-icons/react";
-import { CircleChevronUp, LogOut } from "lucide-react";
+import { CaretCircleUp, SignOut } from "@phosphor-icons/react";
 
 const DEFAULT_PLAN = "Free";
 
@@ -116,7 +115,7 @@ export function UserMenu({
             <span className="max-w-32 truncate text-left text-xs font-medium">
               {displayName}
             </span>
-            <CircleChevronUp  className="size-4 text-muted-foreground" />
+            <CaretCircleUp  className="size-4 text-muted-foreground" />
           </>
         ) : null}
       </DropdownMenuTrigger>
@@ -142,7 +141,7 @@ export function UserMenu({
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
           <DropdownMenuItem variant="destructive" onClick={handleSignOut}>
-            <LogOut  />
+            <SignOut  />
             Log out
           </DropdownMenuItem>
         </DropdownMenuGroup>
